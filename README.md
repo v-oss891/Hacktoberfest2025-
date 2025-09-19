@@ -22,9 +22,9 @@
  <img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
  <a href="https://github.com/muhtalhakhan" ><img src="https://img.shields.io/badge/Contributions-welcome-violet.svg?style=flat&logo=git" alt="Contributions" /></a>
 
-  <a href="https://github.com/muhtalhakhan/hacktoberfest2025/pulls"><img src="https://img.shields.io/github/issues-pr/muhtalhakhan/hacktoberfest2025" alt="Pull Requests Badge"/></a>
-  <a href="https://github.com/muhtalhakhan/Hacktoberfest2025/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/muhtalhakhan/hacktoberfest2025?color=2b9348"></a>
-  <a href="https://github.com/muhtalhakhan/hacktoberfest2025/blob/master/LICENSE"><img src="https://img.shields.io/github/license/muhtalhakhan/hacktoberfest2025?color=2b9348" alt="License Badge"/></a>
+  <a href="https://github.com/muhtalhakhan/Hacktoberfest2025/pulls"><img src="https://img.shields.io/github/issues-pr/muhtalhakhan/Hacktoberfest2025" alt="Pull Requests Badge"/></a>
+  <a href="https://github.com/muhtalhakhan/Hacktoberfest2025/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/muhtalhakhan/Hacktoberfest2025?color=2b9348"></a>
+  <a href="https://github.com/muhtalhakhan/Hacktoberfest2025/blob/master/LICENSE"><img src="https://img.shields.io/github/license/muhtalhakhan/Hacktoberfest2025?color=2b9348" alt="License Badge"/></a>
 
 </div>
 
