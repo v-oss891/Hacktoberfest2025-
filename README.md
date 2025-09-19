@@ -5,7 +5,7 @@
 
 <div align="center">
   <a href="https://github.com/muhtalhakhan/Hacktoberfest2025/graphs/contributors">
-    <img src="[https://contrib.rocks/image?repo=muhtalhakhan/Hacktoberfest2025](https://contrib.rocks/image?repo=muhtalhakhan/Hacktoberfest2025)"/>
+    <img src="https://contrib.rocks/image?repo=muhtalhakhan/Hacktoberfest2025"/>
   </a>  
 </div>
 
