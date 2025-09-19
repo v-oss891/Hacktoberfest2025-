@@ -1,13 +1,13 @@
 # HacktoberFest 2025 `OPEN FIRST` Pull Request 🎉
 ![Hacktoberfest 2025](logo.png)
 
-## Contributors of `Hacktoberfest 2025`
+<!-- ## Contributors of `Hacktoberfest 2025`
 
 <div align="center">
   <a href="https://github.com/muhtalhakhan/Hacktoberfest2025/graphs/contributors">
     <img src="https://contrib.rocks/image?repo=muhtalhakhan/Hacktoberfest2025"/>
   </a>  
-</div>
+</div> -->
 
 ## This Project Is Perfect For Your First Pull Request
 
