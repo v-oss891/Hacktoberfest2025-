@@ -1,44 +1,13 @@
-import { WebSocketServer, WebSocket } from "ws";
-import { nanoid } from "nanoid";
+const { WebSocketServer } = require("ws");
+const { nanoid } = require("nanoid");
 
 const port = process.env.PORT ? parseInt(process.env.PORT) : 8080;
 const wss = new WebSocketServer({ port }, () => {
   console.log("Server listening on port 8080");
 });
 
-interface Room {
-  roomName: string;
-  createdBy: string;
-  participants: Set<WebSocket>;
-  lastActive: number;
-}
-
-interface User {
-  userId: string;
-  userName: string;
-}
-
-interface CreateRoomPayload {
-  roomName: string;
-  createdBy: string;
-}
-
-interface JoinRoomPayload {
-  roomId: string;
-  userName: string;
-}
-
-interface BroadcastPayload {
-  roomId: string;
-  message: string;
-}
-
-interface LeaveRoomPayload {
-  roomId: string;
-}
-
-const rooms = new Map<string, Room>();
-const users = new Map<WebSocket, User>();
+const rooms = new Map();
+const users = new Map();
 
 wss.on("connection", (ws) => {
   console.log("user connected");
@@ -49,13 +18,13 @@ wss.on("connection", (ws) => {
     const payload = parsedMessage.payload;
 
     if (type === "create-room") {
-      createRoom(payload as CreateRoomPayload, ws);
+      createRoom(payload, ws);
     } else if (type === "join-room") {
-      joinRoom(payload as JoinRoomPayload, ws);
+      joinRoom(payload, ws);
     } else if (type === "broadcast") {
       broadcastToRoom(parsedMessage, ws);
     } else if (type === "leave-room") {
-      const message = leaveRoom(payload as LeaveRoomPayload, ws);
+      const message = leaveRoom(payload, ws);
       ws.send(JSON.stringify(message));
     }
   });
@@ -65,7 +34,7 @@ wss.on("connection", (ws) => {
   });
 });
 
-function createRoom(payload: CreateRoomPayload, ws: WebSocket) {
+function createRoom(payload, ws) {
   try {
     const roomId = generateRoomId();
     const roomName = payload.roomName;
@@ -92,7 +61,7 @@ function createRoom(payload: CreateRoomPayload, ws: WebSocket) {
           roomId,
           roomName,
           userCount: 1,
-          message: `Room \"${roomName}\" created successfully.`,
+          message: `Room "${roomName}" created successfully.`,
         },
       })
     );
@@ -110,7 +79,7 @@ function createRoom(payload: CreateRoomPayload, ws: WebSocket) {
   }
 }
 
-function joinRoom(payload: JoinRoomPayload, ws: WebSocket) {
+function joinRoom(payload, ws) {
   try {
     const { roomId, userName } = payload;
     const room = rooms.get(roomId);
@@ -144,7 +113,7 @@ function joinRoom(payload: JoinRoomPayload, ws: WebSocket) {
             roomName: room.roomName,
             createdBy: room.createdBy,
             userCount: room.participants.size,
-            message: `Room \"${room.roomName}\" joined successfully.`,
+            message: `Room "${room.roomName}" joined successfully.`,
           },
         })
       );
@@ -173,9 +142,9 @@ function joinRoom(payload: JoinRoomPayload, ws: WebSocket) {
   }
 }
 
-function broadcastToRoom(parsedMsg: any, ws: WebSocket) {
+function broadcastToRoom(parsedMsg, ws) {
   try {
-    const { roomId, message: msg } = parsedMsg.payload as BroadcastPayload;
+    const { roomId, message: msg } = parsedMsg.payload;
     const room = rooms.get(roomId);
 
     if (!room) {
@@ -235,7 +204,7 @@ function broadcastToRoom(parsedMsg: any, ws: WebSocket) {
   }
 }
 
-function leaveRoom(payload: LeaveRoomPayload, ws: WebSocket) {
+function leaveRoom(payload, ws) {
   const { roomId } = payload;
   const user = users.get(ws);
   const room = rooms.get(roomId);
@@ -277,13 +246,13 @@ function leaveRoom(payload: LeaveRoomPayload, ws: WebSocket) {
   return {
     type: "leave-success",
     payload: {
-      message: `You left the room \"${room.roomName}\".`,
+      message: `You left the room "${room.roomName}".`,
       roomId,
     },
   };
 }
 
-function handleDisconnet(ws: WebSocket) {
+function handleDisconnet(ws) {
   const user = users.get(ws);
   if (!user) return;
 
@@ -328,14 +297,14 @@ setInterval(() => {
   });
 }, 3600000);
 
-function generateRoomId(): string {
-  let id: string;
+function generateRoomId() {
+  let id;
   do {
     id = Math.floor(100000 + Math.random() * 900000).toString();
   } while (rooms.has(id));
   return id;
 }
 
-function generateUserId(): string {
+function generateUserId() {
   return nanoid(7);
 }
